@@ -1,0 +1,66 @@
+$primary-color: #ff1a1a;
+$secondary-color: #333;
+$text-color: #666;
+$background-color: #fff3f3;
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid $secondary-color;
+
+	.logo {
+		font-size: 24px;
+		font-weight: bold;
+		padding: 10px 0px;
+		a {
+			font-size: 20px;
+			font-weight: bold;
+			color: $secondary-color;
+			text-decoration: none;
+			font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+	.nav {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 20px;
+
+		a {
+			color: $secondary-color;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: 500;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+.footer {
+	background: $background-color;
+	color: $text-color;
+	text-align: center;
+	padding: 1rem 0;
+	position: relative;
+	bottom: 0;
+	width: 100%; 
+
+	p {
+		padding: 0;
+		margin: 0;
+		font-size: 14px;
+		font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+		color: $secondary-color;
+	}
+}
